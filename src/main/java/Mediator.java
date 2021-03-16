@@ -45,6 +45,7 @@ public class Mediator {
 
     /**
      * Ajouter des données sources provenant d'un fichier CSV
+     *
      * @param file_path nom du fichier
      * @param delimiter délimiteur
      */
@@ -65,6 +66,7 @@ public class Mediator {
 
     /**
      * Générer les capacités d'une source
+     *
      * @param source source
      */
     private void generateSourceCapacities(Wrapper source) {
@@ -79,84 +81,182 @@ public class Mediator {
      * Exécuter une requête SQL
      */
     public void executeSelectRequest(String sql_request) {
-        sql_request = sql_request.toUpperCase();
-        if (debug_mode) System.out.println("> Préparation de la requête : " + sql_request);
         String views_request = decomposeRequest(analyzeSQLRequest(sql_request));
-        if (debug_mode) System.out.println("> Requête décomposée : \n\n" + views_request);
+        if (debug_mode) System.out.println("> Requête décomposée et optimisée : \n\n" + views_request);
         Statement statement = JDBC.createStatement(null);
         System.out.println("> Mise à jour de la base de données temporaire...");
         JDBC.updateDB(statement, views_request);
-        System.out.println("> Exécution de la requête...");
-        Map<String, List<String>> result = JDBC.queryDB(statement, sql_request);
+        System.out.println("> Exécution de la requête : \n\n" + sql_request + "\n");
+        List<List<String>> result = JDBC.queryDB(statement, sql_request);
         System.out.println("> Résultats : \n");
-        System.out.println(result);
+        JDBC.showQueryResult(result);
         JDBC.closeConnection(null);
     }
 
     /**
-     * Analyser une requête SQL
-     * @param sql_request requête SQL
+     * Récupérer la liste des tables utiles contenues dans une requête SQL
+     *
+     * @param query requête
+     * @return liste des tables utiles
      */
-    public Map<String, List<String>> analyzeSQLRequest(String sql_request) {
-        if (debug_mode) System.out.println("> Analyse de la requête...");
-        int select_index = sql_request.indexOf("SELECT ");
-        int from_index = sql_request.indexOf(" FROM ");
-        int where_index = sql_request.indexOf(" WHERE ");
-        if (!sql_request.startsWith("SELECT ")) Utils.throwException("Requête invalide.");
-        // S'il n'y a pas le mot clé 'FROM', il s'agit sûrement de l'exécution d'une fonction
-        if (from_index == -1) return new HashMap<>();
-        // Récupération des tables
-        List<String> tables = Arrays.asList(sql_request.substring(from_index + 5,
-                where_index > -1 ? where_index : sql_request.length()).split(","));
+    private List<String> retrieveSQLQueryTables(String query) {
+        int from_index = query.indexOf("FROM");
+        int where_index = query.indexOf("WHERE");
+        List<String> tables = Arrays.asList(query.substring(from_index + 5,
+                where_index > -1 ? where_index - 1 : query.length()).split(","));
         for (int i = 0; i < tables.size(); i++)
             tables.set(i, tables.get(i).replaceAll(" ", ""));
+        return tables;
+    }
 
-        // Récupération des attributs
-        List<String> attributes = Arrays.asList(sql_request.substring(select_index + 7, from_index).split(","));
+    /**
+     * Récupérer la liste des attributs utiles contenus dans une requête SQL
+     *
+     * @param query requête
+     * @return liste des attributs utiles
+     */
+    private List<String> retrieveSQLQueryAttributes(String query) {
+        int select_index = query.indexOf("SELECT");
+        int from_index = query.indexOf("FROM");
+        int where_index = query.indexOf("WHERE");
+        int group_index = query.indexOf("GROUP BY");
+        List<String> attributes = new ArrayList<>();
+        attributes.addAll(Arrays.asList(query.substring(select_index + 7, from_index - 1).split(",")));
+        attributes.addAll(Arrays.asList(query.substring(where_index + 6,
+                group_index > -1 ? group_index - 1 : query.length() - 1).split("AND")));
+        return attributes;
+    }
+
+    /**
+     * Séparer les attributs groupés pour récupérer les sous-attributs
+     *
+     * @param attributes attributs
+     */
+    private void splitGroupedAttributes(List<String> attributes) {
+        Map<String, List<String>> grouped_attributes = new HashMap<>();
+        for (String attribute : attributes) {
+            int lpar_pos = attribute.indexOf("(");
+            int comma_pos = attribute.indexOf(",");
+            int rpar_pos = attribute.indexOf(")");
+            if (lpar_pos > -1 && comma_pos > -1 && rpar_pos > -1) {
+                List<String> sub_attributes = Arrays.asList(attribute.substring(lpar_pos + 1, rpar_pos).split(","));
+                grouped_attributes.put(attribute, sub_attributes);
+            }
+        }
+        // Remplacement des attributs groupés par leur sous-attributs
+        for (Map.Entry<String, List<String>> entry : grouped_attributes.entrySet()) {
+            attributes.remove(entry.getKey());
+            attributes.addAll(entry.getValue());
+        }
+    }
+
+    /**
+     * Reformater une liste d'attribut
+     *
+     * @param attributes liste d'attributs
+     */
+    private void reformatAttributes(List<String> attributes) {
         for (int i = 0; i < attributes.size(); i++) {
-            String attribute = attributes.get(i);
-            // On ne récupère seulement le nom de l'attribut, les autres paramètres sont ignorés
-            if (attribute.contains("(") && attribute.contains(")"))
-                attribute = attribute.substring(attribute.indexOf("(") + 1, attribute.indexOf(")"));
-            if (attribute.contains("."))
-                attribute = attribute.substring(attribute.indexOf(".") + 1);
+            String attribute = attributes.get(i).toUpperCase();
+            if (attribute.contains("("))
+                attribute = attribute.substring(attribute.indexOf("(") + 1);
+            if (attribute.contains(")"))
+                attribute = attribute.substring(0, attribute.indexOf(")"));
             if (attribute.contains(" AS "))
                 attribute = attribute.substring(0, attribute.indexOf(" AS "));
+            if (attribute.contains("="))
+                attribute = attribute.substring(0, attribute.indexOf("="));
             attributes.set(i, attribute.replaceAll(" ", ""));
         }
+    }
 
-        Map<String, List<String>> result = new HashMap<>();
+    /**
+     * Vérifier que des attributs sont bien existants
+     *
+     * @param attributes attributs
+     */
+    private Map<String, List<String>> verifyAndFilterAttributes(List<String> tables, List<String> attributes) {
+        Map<String, List<String>> filtered = new HashMap<>();
 
-        // Vérification des tables
-        for (String table : tables) {
+        // Ajout des tables dans les filtres
+        for (String table : tables)
             if (!tables_attributes.containsKey(table)) Utils.throwException("Requête invalide.");
-            result.put(table, new ArrayList<>());
-        }
+            else filtered.put(table, new ArrayList<>());
 
-        // Vérification des attributs
+        System.out.println(tables);
+        System.out.println(attributes);
+
+        // Filtrage des attributs
         if (attributes.get(0).equals("*")) {
             for (String table : tables)
-                result.get(table).add("*");
+                filtered.get(table).add("*");
         } else {
             for (String attribute : attributes) {
                 boolean found = false;
-                for (Map.Entry<String, LinkedHashSet<String>> table_entry : tables_attributes.entrySet()) {
-                    LinkedHashSet<String> table_attributes = table_entry.getValue();
-                    if (table_attributes.contains(attribute) && !result.get(table_entry.getKey()).contains(attribute)) {
-                        found = true;
-                        result.get(table_entry.getKey()).add(attribute);
-                        break;
+                // Si c'est une chaine de caractère on passe au suivant
+                if (attribute.startsWith("\"") && attribute.endsWith("\"") ||
+                        attribute.startsWith("'") && attribute.endsWith("'")) {
+                    continue;
+                } else if (attribute.contains(".")) {
+                    // On vérifie que ce n'est pas un nombre
+                    try {
+                        Double.parseDouble(attribute);
+                        continue;
+                    } catch (NumberFormatException e) {
+                        // S'il contient un point, on a accès à la table dans laquelle il est contenu
+                        int dot_pos = attribute.indexOf(".");
+                        String possible_table = attribute.substring(0, dot_pos);
+                        attribute = attribute.substring(dot_pos + 1);
+                        if (tables_attributes.get(possible_table).contains(attribute)) {
+                            found = true;
+                            filtered.get(possible_table).add(attribute);
+                        }
+                    }
+                } else {
+                    // Sinon on recherche une table à laquelle il pourrait appartenir
+                    for (String table : tables) {
+                        LinkedHashSet<String> table_attributes = tables_attributes.get(table);
+                        if (table_attributes.contains(attribute) && !filtered.get(table).contains(attribute)) {
+                            found = true;
+                            filtered.get(table).add(attribute);
+                            break;
+                        }
                     }
                 }
                 if (!found) Utils.throwException("Requête invalide.");
             }
         }
 
-        return result;
+        return filtered;
+    }
+
+    /**
+     * Analyser une requête SQL
+     *
+     * @param sql_request requête SQL
+     */
+    private Map<String, List<String>> analyzeSQLRequest(String sql_request) {
+        if (debug_mode) System.out.println("> Analyse de la requête...");
+        if (!sql_request.startsWith("SELECT") || !sql_request.contains("FROM"))
+            Utils.throwException("Requête invalide.");
+
+        // Récupération des tables et attributs depuis la requête
+        List<String> tables = retrieveSQLQueryTables(sql_request);
+        List<String> attributes = retrieveSQLQueryAttributes(sql_request);
+
+        // Séparation des attributs groupés (par exemple ceux dans une fonction)
+        splitGroupedAttributes(attributes);
+
+        // Reformatage des attributs
+        reformatAttributes(attributes);
+
+        // Vérification et filtrage des attributs par table
+        return verifyAndFilterAttributes(tables, attributes);
     }
 
     /**
      * Décomposer une requête SQL
+     *
      * @param query_elements éléments obtenus à partir de la requête SQL
      */
     private String decomposeRequest(Map<String, List<String>> query_elements) {
@@ -201,15 +301,17 @@ public class Mediator {
         // Regroupement de toutes les requêtes de vues
         for (StringBuilder query : tables_views.values()) {
             query.setLength(query.length() - 7);
-            views_query.append(query + ";\n");
+            views_query.append(query + ";\n\n");
         }
+        views_query.setLength(views_query.length() - 1);
 
         return views_query.toString();
     }
 
     /**
      * Créer une fonction SQL
-     * @param name nom de la fonction
+     *
+     * @param name     nom de la fonction
      * @param function fonction
      */
     public void createSQLFunction(String name, Function function) {

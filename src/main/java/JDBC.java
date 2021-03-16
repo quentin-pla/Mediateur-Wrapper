@@ -1,10 +1,7 @@
 import org.sqlite.Function;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Utilitaire fonctions JDBC
@@ -43,8 +40,8 @@ public class JDBC {
      * @param query   requête
      * @return résultat
      */
-    public static Map<String, List<String>> queryDB(String db_name, String query) {
-        Map<String, List<String>> result = queryDB(createStatement(db_name), query);
+    public static List<List<String>> queryDB(String db_name, String query) {
+        List<List<String>> result = queryDB(createStatement(db_name), query);
         closeConnection(db_name);
         return result;
     }
@@ -56,19 +53,23 @@ public class JDBC {
      * @param query     requête
      * @return résultat
      */
-    public static Map<String, List<String>> queryDB(Statement statement, String query) {
+    public static List<List<String>> queryDB(Statement statement, String query) {
         try {
             ResultSet rs = statement.executeQuery(query);
             ResultSetMetaData resultSetMetaData = rs.getMetaData();
             final int columnCount = resultSetMetaData.getColumnCount();
-            Map<String, List<String>> result = new HashMap<>();
+            List<List<String>> result = new ArrayList<>();
+            // Ajout de la liste des attributs en tête de liste
+            List<String> attributes = new ArrayList<>();
+            for (int i = 1; i <= columnCount; i++)
+                attributes.add(resultSetMetaData.getColumnName(i));
+            result.add(attributes);
+            // Parcours des tuples
             while (rs.next()) {
-                for (int i = 1; i <= columnCount; i++) {
-                    String column_name = resultSetMetaData.getColumnName(i);
-                    if (!result.containsKey(column_name))
-                        result.put(column_name, new ArrayList<>());
-                    result.get(column_name).add(rs.getObject(i) == null ? "" : rs.getObject(i).toString());
-                }
+                List<String> tuple = new ArrayList<>();
+                for (int i = 1; i <= columnCount; i++)
+                    tuple.add(rs.getObject(i) == null ? "" : rs.getObject(i).toString());
+                result.add(tuple);
             }
             return result;
         } catch (SQLException e) {
@@ -167,6 +168,28 @@ public class JDBC {
             if (connection != null) connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * Afficher les résultats d'une requête SQL
+     * @param data données
+     */
+    public static void showQueryResult(List<List<String>> data) {
+        int[] column_spaces = new int[data.get(0).size()];
+        for (List<String> tuple : data) {
+            for (int i = 0; i < tuple.size(); i++) {
+                int value_length = tuple.get(i).length();
+                if (column_spaces[i] < value_length)
+                    column_spaces[i] = value_length;
+            }
+        }
+        for (List<String> tuple : data) {
+            for (int i = 0; i < tuple.size(); i++) {
+                int remaining_length = Math.abs(tuple.get(i).length() - column_spaces[i]) + 3;
+                System.out.print("| " + tuple.get(i) + " ".repeat(remaining_length));
+            }
+            System.out.println();
         }
     }
 }

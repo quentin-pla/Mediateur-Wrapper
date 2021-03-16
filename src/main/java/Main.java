@@ -1,71 +1,65 @@
 import org.sqlite.Function;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Main
  */
 public class Main {
     public static void main(String[] args) {
         Mediator mediator = new Mediator(true);
-//        mediator.addDataFromCSV("fontaine","fontaines.csv",';');
-//        mediator.addDataFromCSV("activite","equipements_activites.csv",';');
-//        mediator.addDataFromCSV("parc","espaces_verts.csv",';');
-//
-        mediator.createSQLFunction("A", new Function() {
+        // Intégration des fichiers CSV
+        mediator.addDataFromCSV("fontaine", "fontaines.csv", ';');
+        mediator.addDataFromCSV("activite", "equipements_activites.csv", ';');
+        mediator.addDataFromCSV("parc", "espaces_verts.csv", ';');
+
+        // Création d'une fonction SQL "DISTANCE" pour obtenir la distance approximative entre deux coordonnées GPS
+        mediator.createSQLFunction("DISTANCE", new Function() {
             @Override
-            protected void xFunc() {
-                System.out.println("myFunc called!");
+            protected void xFunc() throws SQLException {
+                if (args() == 4) {
+                    // Latitude 1, Longitude 1, Latitude 2, Longitude 2
+                    result(Utils.distance(value_double(0), value_double(1),
+                            value_double(2), value_double(3)));
+                } else {
+                    Utils.throwException("Nombre d'arguments invalides.");
+                }
             }
         });
 
-//        mediator.executeSelectRequest("SELECT COUNT(PARC.ID) AS IDP FROM PARC");
-        mediator.executeSelectRequest("SELECT A();");
+        // Liste des requêtes diponibles
+        List<String> available_queries = new ArrayList<>();
 
+        // 1. Requête permettant de voir les parcs ouverts pendant la canicule
+        // avec une fontaine d'eau potable à moins de 200m
+        available_queries.add(String.join("\n",
+                "SELECT PARC.ID, PARC.NOM, PARC.ARRONDISSEMENT, FONTAINE.ID, FONTAINE.TYPE, FONTAINE.COMMUNE",
+                "FROM PARC, FONTAINE",
+                "WHERE PARC.TYPE = \"Promenades ouvertes\"",
+                "AND PARC.OUVERTURE_CANICULE = \"Oui\"",
+                "AND DISTANCE(PARC.LATITUDE, PARC.LONGITUDE, FONTAINE.LATITUDE, FONTAINE.LONGITUDE) <= 200",
+                "GROUP BY PARC.ID"));
 
+        // 2. Requête permettant de voir les activités touristiques aux alentours d'un parc (moins de 500m)
+        available_queries.add(String.join("\n",
+                "SELECT ACTIVITE.ID, ACTIVITE.NOM, ACTIVITE.ARRONDISSEMENT, PARC.ID, PARC.NOM, PARC.ARRONDISSEMENT",
+                "FROM ACTIVITE, PARC",
+                "WHERE PARC.TYPE = \"Promenades ouvertes\"",
+                "AND PARC.OUVERTURE_CANICULE = \"Oui\"",
+                "AND DISTANCE(ACTIVITE.LATITUDE, ACTIVITE.LONGITUDE, PARC.LATITUDE, PARC.LONGITUDE) <= 500",
+                "GROUP BY ACTIVITE.ID"));
 
+        // 3. Requête permettant de voir les fontaines potables aux alentours (200m) de la position GPS d'un utilisateur
+        // Exemple avec un utilisateur situé à l'adresse suivante : Esplanade Jacques Chaban-Delmas, 75007 Paris
+        // Avec la position GPS suivante : 48.852543, 2.312251
+        available_queries.add(String.join("\n",
+                "SELECT ID, TYPE, COMMUNE",
+                "FROM FONTAINE",
+                "WHERE DISTANCE(48.852543, 2.312251, LATITUDE, LONGITUDE) <= 200"));
 
-
-//        System.out.println("Création d'une vue de test...");
-//
-//        // Vue permettant de voir les espaces verts frais ouverts pendant la canicule avec une fontaine d'eau potable à proximité
-//        StringBuilder view = new StringBuilder("DROP VIEW IF EXISTS espaces_verts_fontaines;");
-//        view.append("CREATE VIEW espaces_verts_fontaines AS");
-//
-//        view.append(" SELECT id_espace_vert, nom, id_fontaine");
-//
-//        view.append(" FROM (");
-//        view.append("   SELECT identifiant AS id_espace_vert, nom, type, statut_ouverture,");
-//        view.append("   canicule_ouverture, substr(geo_point_2d,0,instr(geo_point_2d,',')) AS ev_pos_lat,");
-//        view.append("   substr(geo_point_2d,instr(geo_point_2d,',') + 1) AS ev_pos_lng");
-//        view.append("   FROM [ilots-de-fraicheur-espaces-verts-frais]");
-//        view.append("   WHERE type = \"Promenades ouvertes\"");
-//        view.append("   AND statut_ouverture = \"Ouvert\"");
-//        view.append("   AND canicule_ouverture = \"Oui\"");
-//        view.append("),(");
-//        view.append("   SELECT gid AS id_fontaine, substr(geo_point_2d,0,instr(geo_point_2d,',')) AS f_pos_lat,");
-//        view.append("   substr(geo_point_2d,instr(geo_point_2d,',') + 1) AS f_pos_lng");
-//        view.append("   FROM [fontaines-a-boire]");
-//        view.append(")");
-//        view.append(" WHERE power(ev_pos_lat - f_pos_lat, 2) + power(ev_pos_lng - f_pos_lng, 2) < 0.000001");
-//        view.append(" GROUP BY id_espace_vert");
-//
-//        // Création vue et affichage des résultats de la vue
-//        Connection connection = null;
-//        try {
-//            connection = DriverManager.getConnection("jdbc:sqlite:database.db");
-//            Statement statement = connection.createStatement();
-//            statement.executeUpdate(view.toString());
-//            ResultSet rs = statement.executeQuery("select * from espaces_verts_fontaines");
-//            System.out.println("> Résultats :");
-//            while (rs.next())
-//                System.out.println(rs.getString("id_espace_vert") + " " + rs.getString("nom"));
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//            try {
-//                if (connection != null) connection.close();
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//        }
+        // Exécution de la requête
+        mediator.executeSelectRequest(available_queries.get(2));
     }
 }
