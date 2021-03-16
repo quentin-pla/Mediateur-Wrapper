@@ -102,7 +102,7 @@ public class Main {
         // Exemple avec un utilisateur situé à l'adresse suivante : Esplanade Jacques Chaban-Delmas, 75007 Paris
         // Avec la position GPS suivante : 48.852543, 2.312251
         available_queries.add(String.join("\n",
-                "SELECT ID, TYPE, COMMUNE",
+                "SELECT ID, TYPE, VOIE, COMMUNE",
                 "FROM FONTAINE",
                 "WHERE DISTANCE(48.852543, 2.312251, LATITUDE, LONGITUDE) <= 200"));
 

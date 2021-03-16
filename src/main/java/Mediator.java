@@ -18,16 +18,6 @@ public class Mediator {
     private final ArrayList<Wrapper> sources;
 
     /**
-     * Liste des attributs des sources
-     */
-    private final Map<Wrapper, List<String>> sources_attributes;
-
-    /**
-     * Table liée à chauqe source
-     */
-    private final Map<Wrapper, String> sources_tables;
-
-    /**
      * Liaison table - attributs
      */
     private final Map<String, LinkedHashSet<String>> tables_attributes;
@@ -40,8 +30,6 @@ public class Mediator {
     public Mediator(boolean _debug_mode) {
         debug_mode = _debug_mode;
         sources = new ArrayList<>();
-        sources_tables = new HashMap<>();
-        sources_attributes = new HashMap<>();
         tables_attributes = new HashMap<>();
     }
 
@@ -73,8 +61,6 @@ public class Mediator {
      * @param source source
      */
     private void generateSourceCapacities(Wrapper source) {
-        sources_tables.put(source, source.table_name);
-        sources_attributes.put(source, source.attributes);
         if (!tables_attributes.containsKey(source.table_name))
             tables_attributes.put(source.table_name, new LinkedHashSet<>());
         tables_attributes.get(source.table_name).addAll(source.attributes);
