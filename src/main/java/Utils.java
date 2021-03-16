@@ -6,6 +6,7 @@ import static java.lang.Math.*;
 public class Utils {
     /**
      * Lever une exception
+     *
      * @param error erreur
      */
     public static void throwException(String error) {
@@ -20,6 +21,7 @@ public class Utils {
     /**
      * Calculer la distance approximative en mètres entre deux coordonnées GPS
      * (source : https://www.movable-type.co.uk/scripts/latlong.html)
+     *
      * @param lat1 latitude 1
      * @param lon1 longitude 1
      * @param lat2 latitude 2
@@ -36,10 +38,10 @@ public class Utils {
         // Rayon approximatif de la terre
         double R = 6373.0;
 
-        double x = (lon2 - lon1) * cos((lat1+lat2)/2);
+        double x = (lon2 - lon1) * cos((lat1 + lat2) / 2);
         double y = lat2 - lat1;
 
         // Distance en mètres
-        return round(sqrt(x*x + y*y) * R * 1000);
+        return round(sqrt(x * x + y * y) * R * 1000);
     }
 }

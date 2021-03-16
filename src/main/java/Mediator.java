@@ -34,6 +34,8 @@ public class Mediator {
 
     /**
      * Constructeur
+     *
+     * @param _debug_mode mode de débugage
      */
     public Mediator(boolean _debug_mode) {
         debug_mode = _debug_mode;
@@ -46,8 +48,9 @@ public class Mediator {
     /**
      * Ajouter des données sources provenant d'un fichier CSV
      *
-     * @param file_path nom du fichier
-     * @param delimiter délimiteur
+     * @param table_name nom de la table
+     * @param file_path  nom du fichier
+     * @param delimiter  délimiteur
      */
     public void addDataFromCSV(String table_name, String file_path, char delimiter) {
         // On vérifie que le fichier n'est pas déjà contenu dans les sources
@@ -79,6 +82,8 @@ public class Mediator {
 
     /**
      * Exécuter une requête SQL
+     *
+     * @param sql_request requête SQL
      */
     public void executeSelectRequest(String sql_request) {
         String views_request = decomposeRequest(analyzeSQLRequest(sql_request));
@@ -173,7 +178,9 @@ public class Mediator {
     /**
      * Vérifier que des attributs sont bien existants
      *
+     * @param tables tables utiles
      * @param attributes attributs
+     * @return attributs filtrés
      */
     private Map<String, List<String>> verifyAndFilterAttributes(List<String> tables, List<String> attributes) {
         Map<String, List<String>> filtered = new HashMap<>();
@@ -182,9 +189,6 @@ public class Mediator {
         for (String table : tables)
             if (!tables_attributes.containsKey(table)) Utils.throwException("Requête invalide.");
             else filtered.put(table, new ArrayList<>());
-
-        System.out.println(tables);
-        System.out.println(attributes);
 
         // Filtrage des attributs
         if (attributes.get(0).equals("*")) {
@@ -234,6 +238,7 @@ public class Mediator {
      * Analyser une requête SQL
      *
      * @param sql_request requête SQL
+     * @return éléments soutirés de la requête SQL
      */
     private Map<String, List<String>> analyzeSQLRequest(String sql_request) {
         if (debug_mode) System.out.println("> Analyse de la requête...");
@@ -258,6 +263,7 @@ public class Mediator {
      * Décomposer une requête SQL
      *
      * @param query_elements éléments obtenus à partir de la requête SQL
+     * @return requête décomposée et optimisée
      */
     private String decomposeRequest(Map<String, List<String>> query_elements) {
         if (debug_mode) System.out.println("> Décomposition de la requête...");

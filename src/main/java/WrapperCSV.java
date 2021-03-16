@@ -13,8 +13,12 @@ import java.util.Arrays;
 public class WrapperCSV extends Wrapper {
     /**
      * Constructeur
-     * @param file_path chemin vers le fichier
-     * @param delimiter délimiteur
+     *
+     * @param db_name    nom de la base de données
+     * @param table_name nom de la table
+     * @param file_path  chemin vers le fichier
+     * @param delimiter  délimiteur
+     * @param debug_mode mode de débugage
      */
     public WrapperCSV(String db_name, String table_name, String file_path, char delimiter, boolean debug_mode) {
         super(db_name, table_name, file_path, debug_mode);

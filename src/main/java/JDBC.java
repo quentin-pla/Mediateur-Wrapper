@@ -26,6 +26,7 @@ public class JDBC {
 
     /**
      * Récupérer l'instance unique
+     *
      * @return instance
      */
     private static JDBC getInstance() {
@@ -105,8 +106,10 @@ public class JDBC {
 
     /**
      * Créer une fonction sur la base de données
-     * @param db_name nom de la base de données
-     * @param function fonction
+     *
+     * @param db_name       nom de la base de données
+     * @param function_name nom de la fonction
+     * @param function      fonction
      */
     public static void createSQLFunction(String db_name, String function_name, Function function) {
         try {
@@ -118,6 +121,7 @@ public class JDBC {
 
     /**
      * Créer une communication dans une base de données
+     *
      * @param db_name nom de la base de données
      * @return communication
      */
@@ -160,6 +164,7 @@ public class JDBC {
 
     /**
      * Fermer une connexion à une base de données
+     *
      * @param db_name nom de la base de données
      */
     public static void closeConnection(String db_name) {
@@ -173,6 +178,7 @@ public class JDBC {
 
     /**
      * Afficher les résultats d'une requête SQL
+     *
      * @param data données
      */
     public static void showQueryResult(List<List<String>> data) {

@@ -37,7 +37,11 @@ public abstract class Wrapper {
 
     /**
      * Constructeur
+     *
+     * @param _db_name    nom de la base de données
      * @param _table_name nom de la table
+     * @param _file_path  chemin du fichier
+     * @param _debug_mode mode de débugage
      */
     protected Wrapper(String _db_name, String _table_name, String _file_path, boolean _debug_mode) {
         debug_mode = _debug_mode;
@@ -50,14 +54,17 @@ public abstract class Wrapper {
 
     /**
      * Lire un fichier
+     *
      * @param file_path chemin du fichier
-     * @param args arguments
+     * @param args      arguments
      */
     protected abstract void readFile(String file_path, String... args);
 
     /**
      * Convertir les données d'un fichier en une requête SQL
      * permettant de créer la table associée aux données et de la remplir
+     *
+     * @return requête SQL
      */
     protected abstract String convertDataToSQL();
 
