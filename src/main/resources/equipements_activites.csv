@@ -1,0 +1,303 @@
+ID;NOM;TYPE;PAYANT;ADRESSE;ARRONDISSEMENT;OUVERTURE;HORAIRES_LUNDI;HORAIRES_MARDI;HORAIRES_MERCREDI;HORAIRES_JEUDI;HORAIRES_VENDREDI;HORAIRES_SAMEDI;HORAIRES_DIMANCHE;LATITUDE;LONGITUDE
+1;Eglise Reformée de Pentemont;Lieux de culte;Non;106 Rue de Grenelle;75007;;;;;;;;;48.8564498108;2.32188681685
+2;Eglise Notre-Dame des Blancs Manteaux;Lieux de culte;Non;12  RUE BLANCS MANTEAUX;75004;;;;;;;;;48.8589556883;2.35777321451
+3;Médiathèque Marguerite Duras;Bibliothèque;Non;115 rue de bagnolet;75020;Ouvert;;13:30 - 17:30;13:30 - 17:30;13:30 - 17:30;13:30 - 17:30;12:30 - 17:30;13:30 - 17:30;48.8601351396;2.40283581734
+4;Eglise Notre-Dame des Victoires;Lieux de culte;Non;1  RUE NOTRE-DAME DES VICTOIRES;75002;;;;;;;;;48.8667669954;2.34095079155
+5;Brumisateur Square 122 rue des Poissonniers;Brumisateur;Non;122 rue des Poissonniers;75018;Ouvert;;;;;;;;48.8949629357;2.3537317343
+6;Brumisateur Jardin Serge Gainsbourg;Brumisateur;Non;9 avenue de la Porte des Lilas;75019;Ouvert;;;;;;;;48.8777164813;2.40771537219
+7;Brumisateur Square Debrousse;Brumisateur;Non;148 rue de Bagnolet;75020;Ouvert;;;;;;;;48.8620636828;2.40674223308
+8;Brumisateur Square de la Gare de Charonne;Brumisateur;Non;59 boulevard Davout;75020;;;;;;;;;48.8522988192;2.40977120415
+9;Chapelle Saint-Lazare;Lieux de culte;Non;9  SQ ALBAN SATRAGNE;75010;;;;;;;;;48.8756047254;2.35430159271
+10;Eglise Saint-François de Sales;Lieux de culte;Non;15  RUE AMPERE;75017;;;;;;;;;48.8849140712;2.30501390316
+11;Conciergerie;Musée;Oui;2 boulevard du Palais;75001;;;;;;;;;48.8561703669;2.34576773252
+12;Piscine Saint-Merri / Marie-Marvingt;Piscine;Oui;16 rue du renard;75004;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8591149344;2.35249030484
+13;Piscine Joséphine-Baker;Piscine;Oui;quai François Mauriac;75013;Fermé;07:00 - 08:30 / 10:30 - 22:00;07:00 - 08:30 / 10:30 - 22:00;07:00 - 08:30 / 10:30 - 22:00;07:00 - 08:30 / 10:30 - 22:00;07:00 - 08:30 / 10:30 - 22:00;09:00 - 21:00;09:00 - 21:00;48.8360652109;2.37616573854
+14;Eglise Notre-Dame de Bercy;Lieux de culte;Non;10  PL LACHAMBEAUDIE;75012;;;;;;;;;48.8363173954;2.38722245611
+15;Eglise Catholique Armenienne;Lieux de culte;Non;10b RUE THOUIN;75005;;;;;;;;;48.8450098454;2.34880502957
+16;Eglise Saint-Louis Saint-Paul;Lieux de culte;Non;99b RUE SAINT-ANTOINE;75004;;;;;;;;;48.8546193334;2.36144249454
+17;Terrain de boules de Passy;Terrain de boules;;39 AVENUE DE SAINT CLOUD;75016;;;;;;;;;48.8571031836;2.25216210001
+18;Eglise Saint-Eustache;Lieux de culte;Non;140  RUE RAMBUTEAU;75001;;;;;;;;;48.8633939742;2.34513029211
+19;Musée de l'Orangerie;Musée;Oui;Jardin Tuileries;75001;;;;;;;;;48.8637921609;2.32259588942
+20;Musée National des Arts Asiatiques Guimet;Musée;Oui;6 Place d'Iéna;75016;;;;;;;;;48.8653839528;2.29358091084
+21;Eglise Armenienne Saint-Jean Baptiste;Lieux de culte;Non;15  RUE JEAN GOUJON;75008;;;;;;;;;48.8656997357;2.30706102503
+22;Eglise Saint-Martin-des-Marais;Lieux de culte;Non;36  RUE ALBERT THOMAS;75010;;;;;;;;;48.8700429285;2.36294485013
+23;Chapelle de l'Eglise Reformée de Belleville;Lieux de culte;Non;97  RUE JULIEN LACROIX;75020;;;;;;;;;48.8726421877;2.38191957815
+24;Brumisateur Square Séverine;Brumisateur;Non;1 avenue de la porte de Bagnolet;75020;Ouvert;;;;;;;;48.8652628687;2.40954807244
+25;Brumisateur Parc floral Pavillon 12;Brumisateur;Non;Parc Floral;75012;Ouvert;;;;;;;;48.8386909174;2.44368054265
+26;Terrain de boules Jules Ferry;Terrain de boules;Non;35   BOULEVARD RICHARD LENOIR;75011;;;;;;;;;48.8666233906;2.36898191798
+27;Jeu de boules de Vincennes;Terrain de boules;;16 w Route du Donjon;75012;;;;;;;;;48.8444807801;2.4485629167
+28;Eglise Saint-Eugène Sainte-Cecile;Lieux de culte;Non;4b RUE SAINTE-CECILE;75009;;;;;;;;;48.8733406612;2.34717304446
+29;Eglise Saint-Vincent de Paul;Lieux de culte;Non;3b RUE BELZUNCE;75010;;;;;;;;;48.8789459066;2.35191712566
+30;Cité des sciences et de l'industrie;Musée;Oui;30 Avenue Corentin Cariou;75019;;;;;;;;;48.895674827;2.38803219768
+31;MAIRIE DU 12E;Mairie d'arrondissement;Non;130 avenue DAUMESNIL;75012;Fermé;8h30 - 17h;11:30 - 14:00;8h30 - 17h;16:00 - 17:00;12:45 - 14:00;9h - 12h30;Fermé;48.8411116033;2.38824019713
+32;Piscine Aspirant Dunand;Piscine;Oui;20 Rue Saillard;75014;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8318218586;2.32619844257
+33;Bibliothèque Nationale de France François Mitterand;Bibliothèque;Non;Quai François-Mauriac;75013;;;;;;;;;48.8336365294;2.37581757386
+34;Eglise Notre-Dame d'esperance;Lieux de culte;Non;47  RUE ROQUETTE;75011;;;;;;;;;48.8559678308;2.37458976743
+35;Eglise Sainte-Elisabeth;Lieux de culte;Non;195  RUE TEMPLE;75003;;;;;;;;;48.8660832998;2.3604915317
+36;Piscine Henry de Montherlant;Piscine;Oui;30, boulevard Lannes;75016;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8672907949;2.27152835361
+37;Eglise Saint-Joseph;Lieux de culte;Non;4  RUE DARBOY;75011;;;;;;;;;48.8689624237;2.37337401388
+38;Brumisateur Square des Cendriers;Brumisateur;Non;30 rue Duris;75020;Ouvert;;;;;;;;48.8659300397;2.3882548508
+39;Ombrière;Ombrière;Non;35 RUE HENRI HUCHARD;75018;Ouvert;;;;;;;;48.8989502442;2.32977363225
+40;Eglise Saint-Philippe du Roule;Lieux de culte;Non;154  RUE FAUBOURG SAINT HONORE;75008;;;;;;;;;48.8734602133;2.3105146755
+41;Eglise Saint-Louis d'antin;Lieux de culte;Non;63  RUE CAUMARTIN;75009;;;;;;;;;48.8745001755;2.32778426167
+42;Eglise Saint-Laurent;Lieux de culte;Non;119b RUE FAUBOURG SAINT MARTIN;75010;;;;;;;;;48.8748003397;2.35829306607
+43;Eglise Evangelique de l'Etoile;Lieux de culte;Non;54  AV GRANDE ARMEE;75017;;;;;;;;;48.8769044785;2.28704316764
+44;Eglise Saint-Charles de Monceau;Lieux de culte;Non;22b RUE LEGENDRE;75017;;;;;;;;;48.8827027349;2.31279278405
+45;Eglise Saint-Pierre de Montmartre;Lieux de culte;Non;2  RUE MONT CENIS;75018;;;;;;;;;48.8866462087;2.34209530519
+46;Piscine Georges Drigny;Piscine;Oui;18, rue Bochart de Saron;75009;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8820348182;2.3422219785
+47;MAIRIE DU 11E;Mairie d'arrondissement;Non;12 place LEON BLUM;75011;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8585136525;2.37942185521
+48;Piscine Didot;Piscine;Oui;22, avenue Georges Lafenestre;75014;Fermé;10:00 - 18:00;08:30 - 18:00;08:30 - 19:30;08:30 - 18:00;08:30 - 18:00;10:00 - 15:00;10:00 - 15:00;48.8248421761;2.30975858045
+49;Eglise Saint-Dominique;Lieux de culte;Non;16  RUE TOMBE ISSOIRE;75014;;;;;;;;;48.8320886983;2.33501168885
+50;Panthéon;Musée;Oui;Place du Panthéon;75005;;;;;;;;;48.846212129;2.34604424603
+51;Eglise Saint-Joseph des Carmes;Lieux de culte;Non;70  RUE VAUGIRARD;75006;;;;;;;;;48.848456578;2.33033161982
+52;Eglise Roumaine;Lieux de culte;Non;38  RUE RIBERA;75016;;;;;;;;;48.8519559268;2.26922662145
+53;Eglise Saint-Thomas d'aquin;Lieux de culte;Non;4  PL SAINT-THOMAS D'AQUIN;75007;;;;;;;;;48.8564085723;2.32764492131
+54;Brumisateur Îlot Riquet;Brumisateur;Non;Jardin Îlot Riquet;75019;Ouvert;;;;;;;;48.8899028926;2.37366759259
+55;Terrain de boules Avenue Junot;Terrain de boules;Non;17 AVENUE JUNOT;75018;;;;;;;;;48.8881059685;2.33545784105
+56;Cité de la Musique;Musée;Oui;221 Avenue Jean Jaurès;75019;;;;;;;;;48.8898141771;2.3939422436
+57;Musée du 11 Conti - Monnaie de Paris;Musée;Oui;11, quai de Conti;75006;;;;;;;;;48.8567028168;2.3391446692
+58;Aquaboulevard;Piscine;Oui;4-6 Rue Louis Armand;75015;;;;;;;;;48.8318967031;2.27613400683
+59;Eglise Saint-Christophe;Lieux de culte;Non;2  RUE SAINT-CHRISTOPHE;75015;;;;;;;;;48.844697639;2.27931387796
+60;Eglise Sainte-Marguerite;Lieux de culte;Non;36  RUE SAINT-BERNARD;75011;;;;;;;;;48.8531003371;2.38143147155
+61;Bibliothèque André Malraux;Bibliothèque;Non;112 rue de Rennes;75006;Ouvert;;14:00 - 19:00;13:30 - 17:30;14:00 - 19:00;13:30 - 17:30;12:00 - 17:00;;48.8479497669;2.32744931896
+62;Bain-douche Charenton;Bains-douches;Non;188, rue de Charenton;75012;;;;;;;;;48.8433645794;2.38505828514
+63;Bain-douche Lacépède;Bains-douches;Non;50, rue Lacepède;75005;;;;;;;;;48.8443785466;2.34999832201
+64;Terrain de boules de Saint-Mandé;Terrain de boules;;21 ROUTE DU LAC DE SAINT MANDE;75012;;;;;;;;;48.8380887476;2.42314425277
+65;Piscine Georges Rigal;Piscine;Oui;115, boulevard de Charonne;75011;Ouvert;10:00 - 18:00;08:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.856599715;2.39349913013
+66;Musée d'Art et d'Histoire du judaïsme;Musée;Oui;71 Rue du Temple;75003;;;;;;;;;48.8612095185;2.35550907045
+67;Eglise Notre-Dame de Bonne Nouvelle;Lieux de culte;Non;19b RUE BEAUREGARD;75002;;;;;;;;;48.8695390725;2.34999443526
+68;Muséee Grévin;Musée;Oui;10 Boulevard Montmartre;75009;;;;;;;;;48.8719307816;2.34231886746
+69;Brumisateur Square Léon Serpollet;Brumisateur;Non;25 rue des Cloys;75018;Ouvert;;;;;;;;48.892154614;2.33864990997
+70;Brumisateur Parc Floral Pavillon 14;Brumisateur;Non;Parc Floral;75012;Ouvert;;;;;;;;48.8379377914;2.44335287373
+71;Chapelle Expiatoire;Lieux de culte;Non;29  RUE PASQUIER;75008;;;;;;;;;48.8737132671;2.32300436532
+72;Musée En Herbe du Jardin d'acclimatation;Musée;Oui;23 rue de L'Arbre-Sec;75016;;;;;;;;;48.8774557655;2.26895373018
+73;Baignade Bassin de la Villette;Baignade extérieure;Non;Quai de la Loire;75019;;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;11h-13h / 13h30-15h30 / 16h-18h / 18h30-20h30;48.8857642619;2.37484799635
+74;Piscine Champerret;Piscine;Oui;36, boulevard de Reims;75017;Ouvert;10:00 - 22:00;10:00 - 22:00;10:00 - 22:00;10:00 - 22:00;10:00 - 22:00;09:00 - 19:00;09:00 - 19:00;48.8886209981;2.29548777419
+75;Basilique Sainte-Clotilde;Lieux de culte;Non;23b RUE LAS CASES;75007;;;;;;;;;48.8586673041;2.31953441349
+76;Piscine Paul Valeyre;Piscine;Oui;24, rue Marguerite de Rochechouart;75009;Fermé;08:30 - 18:00;08:30 - 20:30;10:00 - 18:00;08:30 - 18:00;08:30 - 18:00;11:30 - 16:30;11:30 - 16:30;48.8779672658;2.34502151369
+77;Terrain de boules Saint Bernard;Terrain de boules;Non;21 rue Saint Bernard;75011;;;;;;;;;48.8518638551;2.38132291127
+78;Piscine La Plaine;Piscine;Oui;13, rue du Général Guillaumat;75015;Fermé;10:00 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 20:30;08:30 - 18:00;10:00 - 15:00;10:00 - 15:00;48.8276877055;2.29359971623
+79;Eglise Saint-Pierre de Montrouge;Lieux de culte;Non;82  AV GENERAL LECLERC;75014;;;;;;;;;48.8287832682;2.32706015142
+80;Eglise Saint-Lambert;Lieux de culte;Non;14b RUE BAUSSET;75015;;;;;;;;;48.8396032731;2.29831185578
+81;Eglise de l'Hôpital du Val de Grace;Lieux de culte;Oui;1 Place Alphonse Laveran;75005;;;;;;;;;48.8409099281;2.3417884639
+82;Eglise Saint-Sulpice;Lieux de culte;Non;PL SAINT SULPICE;75006;;;;;;;;;48.8509946926;2.33484459445
+83;Eglise Saint-Julien Le Pauvre;Lieux de culte;Non;1  RUE SAINT-JULIEN LE PAUVRE;75005;;;;;;;;;48.8520087351;2.34705758389
+84;Arc de Triomphe;Musée;Oui;Place Charles de Gaulle;75008;;;;;;;;;48.8737490632;2.29513082821
+85;Bain-douche Ney;Bains-douches;Non;134, boulevard Ney;75018;;;;;;;;;48.8980398296;2.33974571548
+86;Bain -douche Pyrénées;Bains-douches;Non;296, rue des Pyrénées;75020;;;;;;;;;48.8719533773;2.39230250168
+87;Bain-douche Rome;Bains-douches;Non;43, rue de Rome;75008;Fermé;;;;;;;;48.8781004053;2.3224353778
+88;Piscine Emile Anthoine;Piscine;Oui;9, rue Jean Rey;75015;Ouvert;08:00 - 12:30 / 13:30 - 18:00;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8556951309;2.29070130076
+89;Hôtel Salé - Musée Picasso;Musée;Oui;5 rue de Thorigny;75003;;;;;;;;;48.8598813827;2.36217093817
+90;Eglise Protestante Americaine de Paris;Lieux de culte;Non;63  QU ORSAY;75007;;;;;;;;;48.8621135703;2.30679224907
+91;Palais de Tokyo;Musée;Oui;13 Avenue du Président Wilson;75016;;;;;;;;;48.864108938;2.29641546998
+92;Brumisateur Square des Saint-Simoniens;Brumisateur;Non;149 rue de Ménilmontant;75020;Ouvert;;;;;;;;48.8706778196;2.39687334041
+93;Brumisateur Square Pali Kao;Brumisateur;Non;38 rue de Pali Kao;75020;;;;;;;;;48.8707793017;2.38274354632
+94;Chapelle;Lieux de culte;Non;15  RUE PHILIPPE DE GIRARD;75010;;;;;;;;;48.8822487561;2.36114496839
+95;Ancienne Eglise Saint-François de Sales;Lieux de culte;Non;6  RUE BREMONTIER;75017;;;;;;;;;48.8844842301;2.30483753019
+96;Piscine Rouvet;Piscine;Oui;1, rue Rouvet;75019;Ouvert;12:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 20:00;10:00 - 15:00;10:00 - 15:00;48.8930118917;2.38495544485
+97;Chapelle Notre-Dame de Bon Conseil;Lieux de culte;Non;140  RUE CLIGNANCOURT;75018;;;;;;;;;48.8949858636;2.35030604422
+98;Sainte Chapelle;Lieux de culte;Oui;8 BD PALAIS;75001;;;;;;;;;48.855348873;2.34504795976
+99;Piscine Hébert;Piscine;Oui;2, rue des Fillettes;75018;Ouvert;12:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 20:30;10:00 - 15:00;10:00 - 15:00;48.8939685827;2.36321237244
+100;Palais de la Porte Dorée;Musée;Oui;293 Avenue Daumesnil;75012;;;;;;;;;48.8352177145;2.40932720342
+101;Eglise du Saint-Esprit;Lieux de culte;Non;1  RUE CANNEBIERE;75012;;;;;;;;;48.8381750376;2.39761537409
+102;Piscine Roger Le Gall;Piscine;Oui;34, boulevard Carnot;75012;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8416541853;2.41257640694
+103;Eglise Reformée Sainte-Marie;Lieux de culte;Non;17  RUE SAINT-ANTOINE;75004;;;;;;;;;48.8533108487;2.36622542261
+104;Bain-douche Petitot;Bains-douches;Non;1, rue Petitot;75019;Fermé;;;;;;;;48.8764969343;2.39251239855
+105;Temple Protestant dit des Billettes;Lieux de culte;Non;22  RUE ARCHIVES;75004;;;;;;;;;48.8579894754;2.3551331641
+106;Eglise Saint-Germain l'Auxerrois;Lieux de culte;Non;13  RUE ARBRE SEC;75001;;;;;;;;;48.8595240283;2.34129215544
+107;Eglise Reformée de l'annonciation;Lieux de culte;Non;19  RUE CORTAMBERT;75016;;;;;;;;;48.8619209225;2.28045353773
+108;Eglise Saint-André de l'Europe;Lieux de culte;Non;24b RUE SAINT-PETERSBOURG;75008;;;;;;;;;48.8815232502;2.32596366292
+109;Basilique du Sacré-Coeur;Lieux de culte;Non;35  RUE CHEVALIER DE LA BARRE;75018;;;;;;;;;48.8867777312;2.34317238609
+110;Eglise Saint-Joseph des Epinettes;Lieux de culte;Non;40  RUE POUCHET;75017;;;;;;;;;48.8935894946;2.3205546582
+111;Piscine Yvonne Godard;Piscine;Oui;7 rue Serpollet;75020;Fermé;11:30 - 22:00;07:00 - 20:00;08:00 - 20:00;07:00 - 18:30;08:00 - 20:00;09:30 - 20:00;09:30 - 20:00;48.8607863021;2.41060668204
+112;Eglise Saint-Médard;Lieux de culte;Non;141  RUE MOUFFETARD;75005;;;;;;;;;48.8399121833;2.35049014474
+113;Eglise Armenienne Saint-Jean Baptiste de la Salle;Lieux de culte;Non;9  RUE DOCTEUR ROUX;75015;;;;;;;;;48.8412229493;2.31242521364
+114;Piscine Armand Massard;Piscine;Oui;66 boulevard du Montparnasse;75015;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8433332841;2.32336209012
+115;Eglise Saint-Germain de Charonne;Lieux de culte;Non;4 PL SAINT BLAISE;75020;;;;;;;;;48.8605026688;2.40404038148
+116;Piscine de la Cour des Lions;Piscine;Oui;9, rue Alphonse Baudin;75011;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8606250367;2.37024621955
+117;Musée de la Chasse et de la Nature;Musée;Oui;62 Rue des Archives;75003;;;;;;;;;48.8611820558;2.35870524542
+118;Chapelle Espagnole du Coeur Immacule de Marie;Lieux de culte;Non;51b RUE POMPE;75016;;;;;;;;;48.8623841694;2.2753575236
+119;Eglise Saint-Nicolas des Champs;Lieux de culte;Non;252b RUE SAINT-MARTIN;75003;;;;;;;;;48.8654776741;2.35427937135
+120;Brumisateur Paris Plage - Châtelet;Brumisateur;Non;Voie Georges Pompidou;75011;;;;;;;;;48.8579108176;2.34397332104
+121;Grande Synagogue de la Victoire;Lieux de culte;Non;44  RUE VICTOIRE;75009;;;;;;;;;48.8755267145;2.33647211356
+122;Eglise Saint-Augustin;Lieux de culte;Non;14  PL SAINT-AUGUSTIN;75008;;;;;;;;;48.8762477876;2.31887557471
+123;Eglise Grecque Orthodoxe Saint-constantin et Hélène;Lieux de culte;Non;2b RUE LAFERRIERE;75009;;;;;;;;;48.8782351675;2.33843926372
+124;Chapelle Notre-Dame de la Compassion;Lieux de culte;Non;1  BD AURELLE DE PALADINES;75017;;;;;;;;;48.8814988179;2.28321703133
+125;Piscine Jean Boiteux ex Reuilly;Piscine;Oui;13, rue Hénard;75012;Ouvert;13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8421472082;2.38939778634
+126;Piscine Mathis;Piscine;Oui;15, rue Mathis;75019;Fermé;;;;;;;;48.8907391962;2.3750623385
+127;MAIRIE DU 10E;Mairie d'arrondissement;Non;72 RUE DU FAUBOURG SAINT-MARTIN;75010;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8717796375;2.35739605206
+128;Musée Curie;Musée;Non;1 rue Pierre et Marie Curie;75005;;;;;;;;;48.8441614955;2.34458741606
+129;Piscine Jean Taris;Piscine;Oui;16 rue Thouin;75005;Ouvert;13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8447622529;2.34786718768
+130;Cathedrale Saint-Vladimir Le Grand;Lieux de culte;Non;51  RUE SAINTS-PERES;75006;;;;;;;;;48.8547100347;2.33096839529
+131;Eglise Notre-Dame de l'assomption de Passy;Lieux de culte;Non;88  RUE ASSOMPTION;75016;;;;;;;;;48.8557642582;2.26660190344
+132;Eglise Saint-Merry;Lieux de culte;Non;78  RUE SAINT-MARTIN;75004;;;;;;;;;48.8590671616;2.35084071404
+133;Musée du Quai Branly;Musée;Oui;37 Quai Branly;75007;;;;;;;;;48.860797023;2.29757355719
+134;Eglise Saint-Leu Saint-Gilles;Lieux de culte;Non;57b BD SEBASTOPOL;75001;;;;;;;;;48.8628844524;2.35008398812
+135;Galerie Nationale du Jeu de Paume;Musée;Oui;1 place de la Concorde;75001;;;;;;;;;48.865816489;2.3240833244
+136;Eglise Notre-Dame de l'Assomption;Lieux de culte;Non;263b RUE SAINT-HONORE;75001;;;;;;;;;48.8674179054;2.32551699285
+137;Brumisateur Square Des Grès;Brumisateur;Non;57 rue Vitruve;75020;;;;;;;;;48.8594428026;2.40634565974
+138;Piscine Jacqueline Auriol;Piscine;Oui;7 Allée Louis de Funès;75008;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8763071879;2.30589461739
+139;Eglise Notre-Dame des Buttes Chaumont;Lieux de culte;Non;80  RUE MEAUX;75019;;;;;;;;;48.8840063546;2.37852436415
+140;Piscine Pontoise;Piscine;Oui;19, rue de Pontoise;75005;Fermé;;;;;;;;48.8489693897;2.35142538621
+141;MAIRIE DU 15E;Mairie d'arrondissement;Non;31 rue PECLET;75015;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.841526511;2.29988834428
+142;Eglise Notre-Dame de la Gare;Lieux de culte;Non;23  PL JEANNE D'ARC;75013;;;;;;;;;48.8298191995;2.36831526117
+143;Eglise Notre-Dame du Travail;Lieux de culte;Non;59 Rue Vercingétorix;75014;;;;;;;;;48.8359860821;2.31705968073
+144;Musée de la Libération de Paris - Musée du général Leclerc - Musée Jean Moulin;Musée;Non;23 Allée de la 2ème Division Blindée;75014;;;;;;;;;48.8402989166;2.32021794712
+145;Eglise de la Sorbonne;Lieux de culte;Oui;17 rue de la Sorbonne;75005;;;;;;;;;48.8484297353;2.34320658814
+146;Eglise Saint-Germain des Prés;Lieux de culte;Non;3  PL SAINT-GERMAIN DES PRES;75006;;;;;;;;;48.8539580694;2.33437899667
+147;Musée national Eugène Delacroix;Musée;Oui;6 rue de Furstenberg;75006;;;;;;;;;48.8546064711;2.33550441989
+148;Bain-douche Audubon;Bains-douches;Non;11, rue Audubon;75012;;;;;;;;;48.846121495;2.36939108359
+149;Eglise Saint-Ambroise;Lieux de culte;Non;71b BD VOLTAIRE;75011;;;;;;;;;48.8613081223;2.37605004271
+150;Grand Palais;Musée;Oui;3 Avenue du Général Eisenhower;75008;;;;;;;;;48.8661665351;2.31255261584
+151;Brumisateur Square du Cardinal Wyszinski;Brumisateur;Non;72 rue Vercingétorix;75014;Ouvert;;;;;;;;48.8362917191;2.3162505369
+152;Brumisateur Square Rachmaninov;Brumisateur;Non;20 rue Tristan-Tzara;75018;;;;;;;;;48.8953120599;2.36424667963
+153;Eglise Notre-Dame de Lorette;Lieux de culte;Non;2  RUE BOURDALOUE;75009;;;;;;;;;48.8764140181;2.33892467451
+154;Eglise Lutherienne Suedoise;Lieux de culte;Non;9  RUE MEDERIC;75017;;;;;;;;;48.8807105843;2.30307720543
+155;Piscine Georges Hermant;Piscine;Oui;8-10, rue David d Angers;75019;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8823623207;2.3894793921
+156;Piscine Blomet;Piscine;Oui;17, rue Blomet;75015;Fermé;13:00 - 18:00;08:30 - 18:00;08:30 - 20:30;08:30 - 18:00;08:30 - 18:00;10:00 - 15:00;10:00 - 15:00;48.843305162;2.3075037434
+157;Piscine Château-Landon;Piscine;Oui;31, rue du château-Landon;75010;Fermé;;;;;;;;48.8832407588;2.36378920135
+158;Piscine Elisabeth;Piscine;Oui;1, place Edith Thomas;75014;Ouvert;08:00 - 22:30;11:30 - 22:30;08:00 - 22:30;07:30 - 20:00;08:00 - 22:30;09:30 - 23:30;09:30 - 20:30;48.821598053;2.32590087468
+159;Eglise Saint-Antoine de Padoue;Lieux de culte;Non;52  BD LEFEBVRE;75015;;;;;;;;;48.8297509622;2.29433882084
+160;Les Catacombes de Paris;Musée;Oui;1 Avenue du Colonel Henri Rol-Tanguy;75014;;;;;;;;;48.8338363268;2.33239975599
+161;Eglise Saint-Jean Baptiste de Grenelle;Lieux de culte;Non;23  PL ETIENNE PERNET;75015;;;;;;;;;48.8432611077;2.29264122198
+162;Piscine Keller;Piscine;Oui;14 Rue de l'Ingénieur Robert Keller;75015;Ouvert;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;09:00 - 19:00 / 10:00 - 20:00;09:00 - 19:00;09:00 - 19:00;48.8473872138;2.28212490102
+163;Eglise Saint-Louis En L'ile;Lieux de culte;Non;19bis Rue Saint-Louis en l'Île;75004;;;;;;;;;48.8512455336;2.35757512824
+164;Bain-douche Rouvet;Bains-douches;Non;1, rue Rouvet;75019;;;;;;;;;48.8930832109;2.38513627141
+165;Archives Nationales;Musée;Oui;60 rue des Francs Bourgeois;75003;;;;;;;;;48.8600950464;2.35866450389
+166;Musée du Louvre;Musée;Oui;Rue de Rivoli;75001;;;;;;;;;48.8608253628;2.33658475741
+167;Eglise Notre-Dame de la Croix de Menilmontant;Lieux de culte;Non;4  RUE EUPATORIA;75020;;;;;;;;;48.8685633773;2.38729387184
+168;Brumisateur Parc de Passy;Brumisateur;Non;32 avenue du Président Kennedy;75016;Ouvert;;;;;;;;48.8557666231;2.28475270704
+169;Brumisateur Square Curial;Brumisateur;Non;94 rue Curial;75019;Eteint;;;;;;;;48.895709307;2.376556852
+170;Eglise Evangelique de la Rédemption;Lieux de culte;Non;16  RUE CHAUCHAT;75009;;;;;;;;;48.8737356189;2.34004101539
+171;Eglise Reformée des Batignolles;Lieux de culte;Non;44  BD BATIGNOLLES;75017;;;;;;;;;48.8829156707;2.32266007833
+172;Piscine Bernard Lafay;Piscine;Oui;79, rue de la Jonquière;75017;Fermé;;;;;;;;48.8944739061;2.31868612924
+173;Piscine Dunois;Piscine;Oui;70, rue Dunois;75013;Fermé;10:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:30 - 18:00;08:30 - 18:00;11:30 - 16:30;11:30 - 16:30;48.8331703262;2.36627858897
+174;MAIRIE DU 13E;Mairie d'arrondissement;Non;1 PLACE D' ITALIE;75013;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8323404836;2.35526662697
+175;Eglise Evangélique;Lieux de culte;Non;123  AV MAINE;75014;;;;;;;;;48.835447016;2.32432598455
+176;Eglise Saint-Jacques du Haut Pas;Lieux de culte;Non;252 Rue Saint-Jacques;75005;;;;;;;;;48.8436843693;2.34107428357
+177;Maison du Japon;Musée;Oui;101Bis Quai Branly;75015;;;;;;;;;48.8547293389;2.28977248819
+178;Bain-douche Blomet;Bains-douches;Non;17, rue Blomet;75015;Fermé;;;;;;;;48.843305162;2.3075037434
+179;Bain-douche Butte-aux-Cailles;Bains-douches;Non;5, place Paul-Verlaine;75013;Fermé;;;;;;;;48.8274295125;2.35248196087
+180;Bain-douche des Haies;Bains-douches;Non;27, rue des Haies;75020;Fermé;;;09:30 - 10:30;;;;;48.8531118684;2.40095974661
+181;Musée Marmottan;Musée;Oui;2 rue Louis Boilly;75016;;;;;;;;;48.8594041957;2.26727357971
+182;Eglise Saint-Roch;Lieux de culte;Non;296  RUE SAINT-HONORE;75001;;;;;;;;;48.8653653364;2.33265199216
+183;Musée de la Contrefaçon;Musée;Oui;16 Rue de la Faisanderie;75016;;;;;;;;;48.8703148938;2.27660855991
+184;Chapelle du Corpus Christi;Lieux de culte;Non;23  AV FRIEDLAND;75008;;;;;;;;;48.8741780142;2.30197589234
+185;Eglise Sainte-Marie Mediatrice;Lieux de culte;Non;48b BD SERURIER;75019;;;;;;;;;48.8792145772;2.40270079716
+186;Musée National Henner;Musée;Oui;43 avenue de Villiers;75017;;;;;;;;;48.8829357115;2.30763378287
+187;Bibliothèque Parmentier;Bibliothèque;Non;20 bis avenue Parmentier;75011;Fermé;;14:00 - 18:00;14:00 - 18:00;14:00 - 18:00;14:00 - 18:00;12:00 - 17:00;;48.86021539;2.37914365512
+188;Terrain de boules Télégraphe;Terrain de boules;Non;46  rue du telegraphe;75020;Ouvert;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;10:00 - 20:00;10:00 - 18:00;48.8750161253;2.39944283955
+189;MAIRIE DU 17E;Mairie d'arrondissement;Non;16 RUE DES BATIGNOLLES;75017;Fermé;8h30 - 17h;8h30 - 17h;8h30 - 17h;12:00 - 17:00;16:00 - 17:00;9h - 12h30;Fermé;48.8843196288;2.32211346498
+190;Mosquée de Paris;Lieux de culte;Non;2  RUE GEORGES DESPLAS;75005;;;;;;;;;48.8420719967;2.35509716616
+191;Chapelle Sainte-Bernadette;Lieux de culte;Non;4  RUE AUTEUIL;75016;;;;;;;;;48.8478846803;2.26878427893
+192;Eglise Italienne Notre-Dame de la Consolation;Lieux de culte;Non;23  RUE JEAN GOUJON;75008;;;;;;;;;48.8654833538;2.30608676234
+193;Petit Palais - Musée des beaux-arts de la Ville de Paris;Musée;Non;Avenue Winston Churchill;75008;Fermé;;10:00 - 18:00;10:00 - 18:00;10:00 - 18:00;10:00 - 20:00;10:00 - 19:00;10:00 - 19:00;48.8660332596;2.31457254893
+194;Eglise de la Madeleine;Lieux de culte;Non;1  PL MADELEINE;75008;;;;;;;;;48.8700268315;2.32446139366
+195;Brumisateur Square de la Marseillaise;Brumisateur;Non;7 rue de la Marseillaise;75019;Ouvert;;;;;;;;48.8872103502;2.39758787005
+196;Brumisateur Square Sarah Bernhardt;Brumisateur;Non;13 rue Mounet Sully;75020;Ouvert;;;;;;;;48.8493197165;2.40417992371
+197;Brumisateur Square Casque d'Or;Brumisateur;Non;12 rue Michel de Bourges;75020;Ouvert;;;;;;;;48.8541934435;2.40125421778
+198;Eglise Reformée du Saint-Esprit;Lieux de culte;Non;5  RUE ROQUEPINE;75008;;;;;;;;;48.8732287658;2.31988741335
+199;Eglise Saint-Georges;Lieux de culte;Non;2  RUE EDOUARD PAILLERON;75019;;;;;;;;;48.8793837898;2.37485555649
+200;Eglise Saint-Jean de Montmartre;Lieux de culte;Non;19  RUE ABBESSES;75018;;;;;;;;;48.8842062597;2.33788197593
+201;Eglise Sainte-Odile;Lieux de culte;Non;2  AV STEPHANE MALLARME;75017;;;;;;;;;48.8871199187;2.29280825601
+202;Basilique Sainte-Jeanne d'arc;Lieux de culte;Non;18  RUE CHAPELLE;75018;;;;;;;;;48.8915721267;2.36059390145
+203;Eglise Notre-Dame de Clignancourt;Lieux de culte;Non;2  PL JULES JOFFRIN;75018;;;;;;;;;48.8931354116;2.34504134718
+204;MAIRIE DU  9E;Mairie d'arrondissement;Non;6 rue DROUOT;75009;Fermé;8h30 - 17h;8h30 - 17h;8h30 - 17h;16:00 - 17:00;8h30 - 17h;9h - 12h30;Fermé;48.8725509994;2.3404810072
+205;Eglise Notre-Dame de la Salette;Lieux de culte;Non;38  RUE CRONSTADT;75015;;;;;;;;;48.8337073797;2.30012865339
+206;Eglise de l'immaculée Conception;Lieux de culte;Non;14  RUE MARSOULAN;75012;;;;;;;;;48.8459406192;2.40349005078
+207;Eglise Saint-Ephrem-le-Syriaque;Lieux de culte;Non;17 Rue des Carmes;75005;;;;;;;;;48.8483574452;2.34771857366
+208;Eglise Saint-Leon;Lieux de culte;Non;29  RUE DUPLEIX;75015;;;;;;;;;48.8509183404;2.29661591237
+209;Bibliothèque Jacqueline de Romilly;Bibliothèque;Non;16 avenue de la Porte Montmartre;75018;Ouvert;;13:30 - 17:30;13:30 - 17:30;13:30 - 17:30;13:30 - 17:30;12:30 - 17:30;;48.8994538364;2.3364694332
+210;Terrain de boules de Saint-Maurice;Terrain de boules;;8 ROUTE SAINT LOUIS;75012;;;;;;;;;48.825909044;2.42537365406
+211;Eglise Saint-Pierre du Gros Caillou;Lieux de culte;Non;92 Rue Saint-Dominique;75007;;;;;;;;;48.8596700198;2.30519772773
+212;Temple de l'Oratoire;Lieux de culte;Non;1  RUE ORATOIRE;75001;;;;;;;;;48.8616525145;2.33998280805
+213;Eglise Orthodoxe Grecque;Lieux de culte;Non;7  RUE GEORGES BIZET;75016;;;;;;;;;48.8665813637;2.29844649774
+214;Eglise Saint-Honore d'Eylau;Lieux de culte;Non;9  PL VICTOR HUGO;75016;;;;;;;;;48.8691308266;2.28470449133
+215;Eglise  Notre-Dame des Otages;Lieux de culte;Non;81  RUE HAXO;75020;;;;;;;;;48.8741242015;2.40249613893
+216;Eglise Saint-François d'assise;Lieux de culte;Non;5  RUE MOUZAIA;75019;;;;;;;;;48.8803227538;2.3915407859
+217;Eglise Orthodoxe Saint-Serge;Lieux de culte;Non;93  RUE CRIMEE;75019;;;;;;;;;48.8834496083;2.38392386744
+218;Piscine Bertrand Dauvin;Piscine;Oui;12, rue René Binet;75018;Ouvert;10:00 - 18:00;08:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00 / 17:30 - 20:00;08:30 - 20:30;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8995971389;2.34235655642
+219;Piscine de la Butte aux Cailles;Piscine;Oui;5, place Paul Verlaine;75013;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8269135528;2.35289185585
+220;Eglise Lutherienne de Bon Secours;Lieux de culte;Non;20  RUE TITON;75011;;;;;;;;;48.8520235696;2.38669492196
+221;Bain-douche Saint-Merri;Bains-douches;Non;18, rue du Renard;75004;Fermé;;;;;;;;48.8591995139;2.35253737846
+222;Musée des Arts Décoratifs;Musée;Oui;107 Rue de Rivoli;75001;;;;;;;;;48.8630526995;2.33350480533
+223;Piscine Catherine Lagatu;Piscine;Oui;155 avenue Parmentier;75010;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8717029831;2.36927152305
+224;Ombrière;Ombrière;Non;38 PLACE JEANNE D'ARC;75013;Ouvert;;;;;;;;48.8304724821;2.36792140181
+225;Eglise Saint-Jean Baptiste de Belleville;Lieux de culte;Non;4  RUE LASSUS;75019;;;;;;;;;48.8756903174;2.38931213411
+226;Piscine Edouard Pailleron;Piscine;Oui;32, rue Edouard Pailleron;75019;Fermé;08:00 - 16:00;08:00 - 22:30;08:00 - 22:30;08:00 - 22:30;08:00 - 22:30;09:00 - 22:30;09:00 - 18:00;48.8805184194;2.37770892707
+227;MAIRIE DU  6E;Mairie d'arrondissement;Non;78 rue BONAPARTE;75006;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8504911611;2.33258356462
+228;MAIRIE DU 16E;Mairie d'arrondissement;Non;71 avenue HENRI MARTIN;75016;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8639444647;2.27668643992
+229;MAIRIE DU  8E;Mairie d'arrondissement;Non;3 RUE DE LISBONNE;75008;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8777822829;2.31750814871
+230;Piscine Château des Rentiers;Piscine;Oui;184, rue du Château des Rentiers;75013;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8307060734;2.36304618779
+231;Musée de Cluny;Musée;Oui;6 place Paul Painlevé;75005;;;;;;;;;48.8505464394;2.34376845585
+232;Eglise Saint-Jean Bosco;Lieux de culte;Non;77  RUE ALEXANDRE DUMAS;75020;;;;;;;;;48.8551875808;2.39796539091
+233;Eglise Saint-Gervais Saint-Protais;Lieux de culte;Non;13  RUE BARRES;75004;;;;;;;;;48.855514898;2.35471539148
+234;Bain-douche des Deux-Ponts;Bains-douches;Non;8, rue des Deux-Ponts;75004;Fermé;;;;;;;;48.8514780205;2.35634283279
+235;Synagogue Agoudas Hakehilos;Lieux de culte;Non;10  RUE PAVEE;75004;;;;;;;;;48.8559358121;2.36068220347
+236;Chapelle Jésus-Enfant;Lieux de culte;Non;27b RUE LAS CASES;75007;;;;;;;;;48.8589685779;2.31832393103
+237;Cathedrale Americaine de la Sainte-Trinite;Lieux de culte;Non;23  AV GEORGE V;75008;;;;;;;;;48.8675116785;2.30063671034
+238;Brumisateur Jardin du Ranelagh;Brumisateur;Non;1 avenue Prudhon;75016;Ouvert;;;;;;;;48.8586583471;2.26934728638
+239;Brumisateur Square Petit;Brumisateur;Non;27 RUE PETIT;75019;Ouvert;;;;;;;;48.8850593618;2.38207695974
+240;Eglise de la Sainte-Trinite;Lieux de culte;Non;2  RUE MORLOT;75009;;;;;;;;;48.8773205742;2.3313883145
+241;Piscine des Amiraux;Piscine;Oui;6, rue Hermann Lachapelle;75018;Ouvert;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.894359428;2.35100351519
+242;Fondation Louis Vuitton;Musée;Oui;8 Avenue du Mahatma Gandhi;75016;;;;;;;;;48.8766504322;2.26340106255
+243;Musée des Arts Forains;Musée;Oui;53 Avenue des Terroirs de France;75012;;;;;;;;;48.832803114;2.3892970604
+244;Eglise Saint-Etienne du Mont;Lieux de culte;Non;1  RUE SAINT-ETIENNE DU MONT;75005;;;;;;;;;48.8465194243;2.34821891092
+245;Eglise Saint-Nicolas du Chardonnet;Lieux de culte;Non;23  RUE BERNARDINS;75005;;;;;;;;;48.8491358886;2.35037586723
+246;Bain-douche Oberkampf;Bains-douches;Non;42, rue Oberkampf;75011;;;;;;;;;48.8645080373;2.37212241053
+247;Hôtel des Invalides;Musée;Oui;129 rue de Grenelle;75007;;;;;;;;;48.8560002993;2.31108101753
+248;Piscine Suzanne Berlioux;Piscine;Oui;forum des Halles;75001;Fermé;07:00 - 08:15 / 10:00 - 23:00;11:30 - 22:00;11:30 - 23:00;11:30 - 22:00;11:30 - 22:00;09:00 - 19:00;09:00 - 19:00;48.8617939706;2.34716456058
+249;Palais de Chaillot;Musée;Oui;1 place du Trocadéro et du 11 Novembre;75016;;;;;;;;;48.8631450445;2.28961825738
+250;Eglise Saint-Pierre de Chaillot;Lieux de culte;Non;31  AV MARCEAU;75016;;;;;;;;;48.8677051032;2.29850953116
+251;Brumisateur Paris Plage -  Bassin de la Villette;Brumisateur;Non;Bassin de la Villette;75019;;;;;;;;;48.8874412372;2.37647202041
+252;Brumisateur Square du Sergent Aurélie Salel;Brumisateur;Non;13 rue Sorbier;75020;;;;;;;;;48.8670780192;2.39156648612
+253;Brumisateur Square Emmanuel Fleury;Brumisateur;Non;40 rue Le Vau;75020;Ouvert;;;;;;;;48.8703636476;2.41189665163
+254;Piscine Georges-Vallerey;Piscine;Oui;148, avenue Gambetta;75020;Ouvert;11:45 - 13:30;11:45 - 13:30 / 17:15 - 22:00;07:00 - 08:30 / 12:30 - 19:00;11:45 - 13:30 / 17:15 - 22:00;07:00 - 12:30;11:00 - 14:30 / 15:00 - 19:00;11:00 - 14:30 / 15:00 - 19:00;48.8754886936;2.40672976295
+255;Synagogue;Lieux de culte;Non;28  RUE BUFFAULT;75009;;;;;;;;;48.8761049665;2.34256225124
+256;Chapelle Notre-Dame de l'annonciation;Lieux de culte;Non;222  RUE FAUBOURG SAINT HONORE;75008;;;;;;;;;48.876024433;2.30392468372
+257;Musée de Montmartre;Musée;Oui;12-14 Rue Cortot;75018;;;;;;;;;48.8880325872;2.34065590699
+258;Eglise Saint-Michel des Batignolles;Lieux de culte;Non;14b RUE SAINT-JEAN;75017;;;;;;;;;48.8890593486;2.32462856266
+259;Piscine d'Auteuil;Piscine;Oui;1, Route des Lacs à Passy;75016;Fermé;10:00 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;08:30 - 18:00;48.8583014973;2.2612099206
+260;MAIRIE DU 20E;Mairie d'arrondissement;Non;6 place GAMBETTA;75020;Fermé;8h30 - 17h;08:30 - 11:00;8h30 - 17h;16:00 - 17:00;8h30 - 17h;9h - 12h30;Fermé;48.8651246836;2.39897244945
+261;Bain-douche Les Amiraux;Bains-douches;Non;6, rue Hermann-Lachapelle;75018;;;;;;;;;48.8944366731;2.35068445707
+262;Eglise Notre-Dame de Grace de Passy;Lieux de culte;Non;10  RUE ANNONCIATION;75016;;;;;;;;;48.8564036097;2.28042196313
+263;Musée d'Orsay;Musée;Oui;1 Rue de la Légion d'Honneur;75007;;;;;;;;;48.8599823477;2.32635289166
+264;Synagogue Nazareth;Lieux de culte;Non;15  RUE NOTRE-DAME DE NAZARETH;75003;;;;;;;;;48.8669137463;2.35991817714
+265;Eglise Saint-Ferdinand;Lieux de culte;Non;27  RUE ARMAILLE;75017;;;;;;;;;48.8786245889;2.2908191651
+266;Bibliothèque Goutte d'Or;Bibliothèque;Non;4-6 Rue Fleury;75018;Ouvert;;14:30 - 17:30;14:30 - 17:30;14:30 - 17:30;14:30 - 17:30;14:30 - 17:30;;48.8844020955;2.35422854299
+267;MAIRIE DU 18E;Mairie d'arrondissement;Non;1 place JULES JOFFRIN;75018;Fermé;8h30 - 17h;8h30 - 17h;8h30 - 17h;16:00 - 17:00;8h30 - 17h;9h - 12h30;Fermé;48.892287229;2.34464993943
+268;Eglise Saint-Hippolyte;Lieux de culte;Non;27  AV CHOISY;75013;;;;;;;;;48.8213248997;2.36278280963
+269;Grande Galerie de l'Evolution;Musée;Oui;36 Rue Geoffroy-Saint-Hilaire;75005;;;;;;;;;48.8421827632;2.35618062951
+270;Eglise Notre-Dame des Champs;Lieux de culte;Non;91  BD MONTPARNASSE;75006;;;;;;;;;48.8434742949;2.32716150509
+271;Synagogue A.C.I.P.;Lieux de culte;Non;14  RUE CHASSELOUP LAUBAT;75015;;;;;;;;;48.8474578717;2.30484752003
+272;Eglise Saint-Antoine des Quinze-Vingts;Lieux de culte;Non;66  AV LEDRU-ROLLIN;75012;;;;;;;;;48.8487814685;2.37381868471
+273;Eglise Orthodoxe Roumaine;Lieux de culte;Non;9b RUE JEAN DE BEAUVAIS;75005;;;;;;;;;48.8494755391;2.347224637
+274;Eglise Saint-Severin;Lieux de culte;Non;24  RUE SAINT-JACQUES;75005;;;;;;;;;48.8520545245;2.34572198335
+275;Memorial de la Shoah;Musée;Non;17 Rue Geoffroy l'Asnier;75004;;;;;;;;;48.8548970358;2.35610572677
+276;Musée Rodin;Musée;Oui;77 rue de Varenne;75007;;;;;;;;;48.8553093494;2.31585633167
+277;Musée d'Art Moderne de Paris;Musée;Non;11 Avenue du Président Wilson;75016;;;;;;;;;48.8642212277;2.29802336225
+278;MAIRIE DU 4E;Mairie d'arrondissement;;4 PLACE BAUDOYER;75004;;;;;;;;;48.856088024;2.35592108562
+279;Eglise Saint-Joseph Artisan;Lieux de culte;Non;214 Rue la Fayette;75010;;;;;;;;;48.8814100909;2.36763404634
+280;Eglise Saint-Jacques Saint-Christophe;Lieux de culte;Non;3  PL JOINVILLE;75019;;;;;;;;;48.889257131;2.37982795916
+281;Eglise Sainte-Geneviève des Grandes Carrières;Lieux de culte;Non;174  RUE CHAMPIONNET;75018;;;;;;;;;48.8949485589;2.3337358482
+282;Piscine Alfred Nakache;Piscine;Oui;4-12 rue Dénoyez;75020;Ouvert;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8714830603;2.37867704085
+283;MAIRIE DU 19E;Mairie d'arrondissement;Non;5 place ARMAND CARREL;75019;Fermé;8h30 - 17h;8h30 - 17h;8h30 - 17h;11:45 - 13:15;8h30 - 17h;9h - 12h30;Fermé;48.8828086508;2.38191411171
+284;Eglise Sainte-Anne de la Butte Aux Cailles;Lieux de culte;Non;11  RUE MARTIN BERNARD;75013;;;;;;;;;48.8261273385;2.35001384521
+285;Eglise Notre-Dame du Rosaire;Lieux de culte;Non;194  RUE RAYMOND LOSSERAND;75014;;;;;;;;;48.8292711973;2.30791339159
+286;Musée du cinéma - Cinémathèque Française;Musée;Oui;51 rue de Bercy;75012;;;;;;;;;48.8370005872;2.38257494343
+287;Galerie de Botanique;Musée;Oui;18 rue Buffon;75005;;;;;;;;;48.8424422628;2.36016153345
+288;Eglise Notre-Dame d'auteuil;Lieux de culte;Non;1  RUE COROT;75016;;;;;;;;;48.847181816;2.269488122
+289;Piscine René et André Mourlon;Piscine;Oui;19, rue Gaston de Caillavet;75015;Ouvert;08:30 - 14:00;08:30 - 20:30;10:00 - 18:00;08:30 - 18:00;08:30 - 18:00;10:00 - 15:00;10:00 - 15:00;48.8487375055;2.28480685787
+290;Synagogue de la Place des Vosges;Lieux de culte;Non;14  PL VOSGES;75004;;;;;;;;;48.8553213621;2.36683410653
+291;Eglise Saint-Louis des Invalides;Lieux de culte;Non;2  AV TOURVILLE;75007;;;;;;;;;48.8552186435;2.31256011813
+292;Chapelle du Coeur Eucharistique;Lieux de culte;Non;22  RUE LIEUTENANT CHAURE;75020;;;;;;;;;48.8677122918;2.40637732798
+293;Brumisateur Paris Plage - Federico Garcia Lorca;Brumisateur;Non;Voie Georges Pompidou;75004;;;;;;;;;48.8547344789;2.35349011885
+294;Cathedrale Orthodoxe Saint-AlexAndré Nevsky;Lieux de culte;Non;12  RUE DARU;75008;;;;;;;;;48.8776409031;2.30195222912
+295;Eglise Saint-Bernard de la Chapelle;Lieux de culte;Non;6b RUE SAINT-LUC;75018;;;;;;;;;48.8860585976;2.35505459989
+296;Eglise Sainte-Marie des Batignolles;Lieux de culte;Non;77  PL DOCTEUR FELIX LOBLIGEOIS;75017;;;;;;;;;48.8867701584;2.31789501033
+297;MAIRIE DU 14E;Mairie d'arrondissement;Non;2 place FERDINAND BRUNOT;75014;;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;8h30 - 17h;9h - 12h30;Fermé;48.8330815518;2.32653979888
+298;Musée Zadkine;Musée;Non;100 bis Rue d'Assas;75006;;;;;;;;;48.8429977541;2.33399308886
+299;Eglise Maronite de Notre-Dame du Liban;Lieux de culte;Non;17  RUE ULM;75005;;;;;;;;;48.8439673459;2.34531754294
+300;Piscine Saint-Germain;Piscine;Oui;12, rue Lobineau;75006;Fermé;12:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;08:00 - 12:30 / 13:30 - 18:00;48.8518248726;2.33585222398
+301;Bain-douche Bidassoa;Bains-douches;Non;27, rue de la Bidassoa;75020;Fermé;;;;;;;;48.8665914161;2.39297450466
+302;Bain-douche Meaux;Bains-douches;Non;18, rue de Meaux;75019;;;;;;;;;48.8790876422;2.3715358473
