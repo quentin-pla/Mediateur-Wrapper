@@ -89,11 +89,11 @@ public class Mediator {
         String views_request = decomposeRequest(analyzeSQLRequest(sql_request));
         if (debug_mode) System.out.println("> Requête décomposée et optimisée : \n\n" + views_request);
         Statement statement = JDBC.createStatement(null);
-        System.out.println("> Mise à jour de la base de données temporaire...");
+        if (debug_mode) System.out.println("> Mise à jour de la base de données temporaire...");
         JDBC.updateDB(statement, views_request);
-        System.out.println("> Exécution de la requête : \n\n" + sql_request + "\n");
+        if (debug_mode) System.out.println("> Exécution de la requête : \n\n" + sql_request + "\n");
         List<List<String>> result = JDBC.queryDB(statement, sql_request);
-        System.out.println("> Résultats : \n");
+        if (debug_mode) System.out.println("> Résultats : \n");
         JDBC.showQueryResult(result);
         JDBC.closeConnection(null);
     }
